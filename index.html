@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PAEX 2026 - ambiente de avaliação de mérito">
+  <title>PAEX Avaliações 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">P</span><span>PAEX <b>Avaliações</b><small>Edital 07/2026</small></span></a>
+    <div class="top-actions"><span class="stage">Mérito em andamento</span><button class="profile" id="roleToggle">Visão mestre <span>⌄</span></button></div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar">
+      <p class="sidebar-label">GESTÃO DO EDITAL</p>
+      <nav>
+        <a class="nav-item active" href="#overview" data-view="master"><i>▦</i> Visão geral</a>
+        <a class="nav-item" href="#propostas"><i>▤</i> Propostas <span class="count">28</span></a>
+        <a class="nav-item" href="#avaliadores"><i>◉</i> Avaliadores</a>
+        <a class="nav-item" href="#relatorios"><i>↗</i> Relatórios</a>
+      </nav>
+      <div class="sidebar-rule"></div>
+      <p class="sidebar-label">AVALIADOR</p>
+      <nav><a class="nav-item" href="#minhas-avaliacoes" data-view="evaluator"><i>✓</i> Minhas avaliações <span class="count amber">4</span></a></nav>
+      <div class="edit-card"><span class="lock">⌾</span><div><b>Acesso controlado</b><p>O sistema registra cada parecer, nota e envio.</p></div></div>
+    </aside>
+    <main>
+      <section id="masterView">
+        <div class="breadcrumb">EDITAL 07/2026 <span>/</span> AVALIAÇÃO DE MÉRITO</div>
+        <div class="page-head"><div><h1>Painel de acompanhamento</h1><p>Acompanhe a distribuição e o andamento das avaliações de mérito.</p></div><button class="primary" id="openImport">+ Importar propostas</button></div>
+        <section class="metrics">
+          <article><span class="metric-icon indigo">▣</span><div><p>Propostas habilitadas</p><strong>28</strong><small>para análise de mérito</small></div></article>
+          <article><span class="metric-icon blue">◷</span><div><p>Avaliações em andamento</p><strong>31 <em>/ 56</em></strong><small>55% concluídas</small></div></article>
+          <article><span class="metric-icon green">✓</span><div><p>Propostas concluídas</p><strong>12</strong><small>com dois pareceres</small></div></article>
+          <article><span class="metric-icon coral">!</span><div><p>Exigem 3º parecer</p><strong>3</strong><small>diferença ≥ 30 pontos</small></div></article>
+        </section>
+        <section class="content-grid">
+          <article class="panel progress-panel"><div class="panel-head"><div><h2>Andamento da banca</h2><p>56 avaliações previstas</p></div><button class="text-button">Ver detalhes →</button></div>
+            <div class="progress-row"><div class="donut"><span>55%</span></div><div class="legend"><p><i class="dot complete"></i> Concluídas <b>31</b></p><p><i class="dot doing"></i> Em andamento <b>14</b></p><p><i class="dot pending"></i> Não iniciadas <b>11</b></p></div></div>
+          </article>
+          <article class="panel schedule"><div class="panel-head"><div><h2>Próximo marco</h2><p>Cronograma do edital</p></div></div><div class="schedule-date"><b>30</b><span>NOV<br>2026</span></div><h3>Encerramento da avaliação de mérito</h3><p class="muted">As notas devem ser enviadas até 23h59.</p><div class="deadline"><span>Faltam</span><b>25 dias</b></div></article>
+        </section>
+        <section class="panel table-panel" id="propostas"><div class="panel-head"><div><h2>Propostas que precisam de atenção</h2><p>Últimas movimentações da banca</p></div><button class="text-button">Ver todas →</button></div>
+          <div class="table-wrap"><table><thead><tr><th>PROPOSTA</th><th>ÁREA</th><th>AVALIAÇÕES</th><th>SITUAÇÃO</th><th></th></tr></thead><tbody>
+            <tr><td><b>PAEX-2026-014</b><span>Conexões que transformam</span></td><td>Educação</td><td><div class="avatars"><i>AM</i><i>RC</i></div><small>2 de 2 enviadas</small></td><td><span class="pill done">Concluída</span></td><td>›</td></tr>
+            <tr><td><b>PAEX-2026-021</b><span>Ciência no território</span></td><td>Meio ambiente</td><td><div class="avatars"><i>JS</i><i class="outline">+</i></div><small>1 de 2 enviadas</small></td><td><span class="pill action">Acompanhar</span></td><td>›</td></tr>
+            <tr><td><b>PAEX-2026-008</b><span>Rota da cultura capixaba</span></td><td>Cultura</td><td><div class="avatars"><i>LF</i><i>MB</i><i class="warn">3º</i></div><small>2 pareceres divergentes</small></td><td><span class="pill alert">3º parecer</span></td><td>›</td></tr>
+          </tbody></table></div>
+        </section>
+      </section>
+      <section id="evaluatorView" hidden>
+        <div class="breadcrumb">MINHA ÁREA <span>/</span> AVALIAÇÕES</div>
+        <div class="page-head"><div><h1>Minhas avaliações</h1><p>Você tem 4 propostas atribuídas. Seus pareceres permanecem anônimos.</p></div><span class="stage">Prazo: 30 nov.</span></div>
+        <section class="metrics evaluator-metrics"><article><span class="metric-icon indigo">▣</span><div><p>Atribuídas</p><strong>4</strong></div></article><article><span class="metric-icon green">✓</span><div><p>Enviadas</p><strong>1</strong></div></article><article><span class="metric-icon amber">◷</span><div><p>Pendentes</p><strong>3</strong></div></article></section>
+        <section class="panel assignment-list"><div class="panel-head"><div><h2>Fila de avaliação</h2><p>Abrir uma proposta para registrar a pontuação e o parecer.</p></div></div>
+          <button class="assignment" data-open-evaluation><span class="file-icon">▤</span><span class="assignment-title"><b>PAEX-2026-021</b><small>Ciência no território: educação ambiental comunitária</small></span><span class="pill action">Em andamento</span><span>›</span></button>
+          <button class="assignment" data-open-evaluation><span class="file-icon">▤</span><span class="assignment-title"><b>PAEX-2026-019</b><small>Rede de saberes e economia solidária</small></span><span class="pill neutral">Não iniciada</span><span>›</span></button>
+          <button class="assignment" data-open-evaluation><span class="file-icon">▤</span><span class="assignment-title"><b>PAEX-2026-006</b><small>Inclusão digital para mulheres empreendedoras</small></span><span class="pill neutral">Não iniciada</span><span>›</span></button>
+        </section>
+      </section>
+    </main>
+  </div>
+  <dialog id="evaluationDialog"><div class="modal-head"><div><span class="eyebrow">PAEX-2026-021 · AVALIAÇÃO CEGA</span><h2>Ciência no território</h2><p>Registre notas e justificativas por critério.</p></div><button class="close" data-close>×</button></div><div class="modal-body"><div class="eval-side"><b>Documentos</b><a href="#">▣ Formulário de cadastro</a><a href="#">▣ Plano de trabalho</a><a href="#">▣ Currículo Lattes</a><a href="#">▣ Declaração de viabilidade</a><hr><b>Orientação</b><p>Use a escala qualitativa 0, 1, 3 ou 5 nos itens 2 e 3.</p></div><form class="score-form"><div class="score-total"><span>NOTA PARCIAL</span><strong id="scoreTotal">0,0</strong><small>de 100 pontos</small></div><h3>2. Ação de extensão <em>até 45 pontos</em></h3><label><span><b>2.1.1 Diagnóstico e construção conjunta</b><small>Grupo social parceiro, participantes e procedimentos.</small></span><select class="score"><option value="">Nota</option><option>0</option><option>1</option><option>3</option><option>5</option></select></label><label><span><b>2.1.2 Diálogo permanente</b><small>Mecanismos e estratégias de diálogo com o parceiro.</small></span><select class="score"><option value="">Nota</option><option>0</option><option>1</option><option>3</option><option>5</option></select></label><label><span><b>2.3.4 Indicadores de impacto</b><small>Indicadores para avaliar impactos e resultados.</small></span><select class="score"><option value="">Nota</option><option>0</option><option>1</option><option>3</option><option>5</option></select></label><h3>3. Plano de trabalho <em>até 20 pontos</em></h3><label><span><b>3.1.1 Justificativa</b><small>Necessidade do bolsista e papel na equipe.</small></span><select class="score"><option value="">Nota</option><option>0</option><option>1</option><option>3</option><option>5</option></select></label><label><span><b>3.2.1 Atividades e cronograma</b><small>Exequibilidade no prazo e carga horária proposta.</small></span><select class="score"><option value="">Nota</option><option>0</option><option>1</option><option>3</option><option>5</option></select></label><label class="comment"><b>Parecer do avaliador</b><textarea placeholder="Fundamente a avaliação para apoio à banca."></textarea></label></form></div><div class="modal-foot"><button class="secondary" data-close>Salvar rascunho</button><button class="primary" id="submitScore">Enviar avaliação</button></div></dialog>
+  <dialog id="importDialog"><div class="simple-modal"><button class="close" data-close>×</button><span class="eyebrow">PRÓXIMA ETAPA</span><h2>Importar propostas habilitadas</h2><p>Na versão operacional, a planilha de habilitação será importada uma única vez. O sistema valida a identificação da proposta, área temática, coordenador e documentos.</p><div class="dropzone">⇧<br><b>Solte a planilha aqui</b><br><small>ou selecione um arquivo .xlsx</small></div><button class="primary" data-close>Entendi</button></div></dialog>
+  <script src="app.js"></script>
+</body></html>
+
